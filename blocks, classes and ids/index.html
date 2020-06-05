@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="outside">
+        <h1 id="myHeader">Blocks, Classes and IDs</h1>
+        <div class="container">
+            <h2>Block Level Elements</h2>
+            <div>
+                <h3 class="yellow">Figure</h3>
+                <figure>
+                    <img src="cutedoggo.jpg" alt="corgi" style="width:30%">
+                    <figcaption>This is a cute corgi, and also an example of the block
+                        level element, figure. It allows you to display text under an image.
+                    </figcaption>
+                </figure>
+
+                <h3 class="yellow">Section</h3>
+                <section>
+                    <h2>Block Level Element: section</h2>
+                    <p>This is an example of the block level element, section.</p>
+                </section>
+
+                <h3 class="yellow">hr</h3>
+                <p>Below is an example of the hr tag. This is text before the hr tag.</p>
+
+                <hr>
+
+                <p>This is text after the hr tag.</p>
+
+                <h3 class="yellow">pre</h3>
+                <pre>
+                This is an example of
+                the block level element, pre. 
+                Pre    allows you to
+                preformat your
+                text with spaces and 
+                line   breaks.
+                </pre>
+
+                <h3 class="yellow">dd</h3>
+                <p>Below is an example of the block level element, dd. It allows you to
+                    create lists with a sublevel description.
+                </p>
+                <dl>
+                    <dt>(1) Cheeseburger</dt>
+                    <dd>With cheese, onion and pickle</dd>
+                    <dt>(1) Hotdog</dt>
+                    <dd>With mustard, relish and onion</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="container" id="inline">
+            <h2>Inline Elements</h2>
+            <h3 class="lightgrey">abbr</h3>
+            This is an <abbr title="Example">ex.</abbr> of the inline element, abbr. It allows you
+            to abbreviate a word or use an acronym while still allowing the description to be available.
+
+            <h3 class="lightgrey">kbd</h3>
+            <p>Below is an example of the inline element, kbd. It allows you to easily display keyboard input.
+            </p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> to open task manager (Windows).</p>
+
+            <h3 class="lightgrey">small</h3>
+            <p>Below is an example of the inline element, small.</p>
+            <p><small>It allows you to display specific text in a smaller font.</small></p>
+
+            <h3 class="lightgrey">sup</h3>
+            <p>This is an example of the inline element, sup<sup>[1]</sup>. It allows you to
+                display specific text as <sup>superscript</sup>.</p>
+
+            <h3 class="lightgrey">bdo</h3>
+            <bdo dir="rtl">
+                This is an example of the inline element, bdo. It allows you to override the text direction.
+            </bdo>
+            <p>This is regular text.</p>
+        </div>
+
+
+
+
+        <div class="container" id="new elements">
+            <h2>New Elements</h2>
+            <h3 class="steelblue">time</h3>
+            <p>This is an example of the new semantic element, time. It allows you to display a
+                specific time: Come by between <time>10:30</time> and <time>12:30</time>.</p>
+
+            <h3 class="steelblue">mark</h3>
+            <p>This is an example of the new semantic element, mark. It allows you to display
+                <mark>highlighted text</mark>.</p>
+
+            <h3 class="steelblue">details</h3>
+            <details>
+                <summary>New Semantic Element: details</summary>
+                <p>This is an example of the new semantic element, details. It allows you to
+                    display details that the user can toggle off and on.
+                </p>
+            </details>
+
+            <h3 class="steelblue">article</h3>
+            <article>
+                <h2>New Semantic Element: article</h2>
+                <p>This is an example of the new semantic element, article. It allows you to
+                    display specific text as an independent content.</p>
+            </article>
+
+            <article>
+                <h2>New Semantic Element: article pt. 2</h2>
+                <p>You can clearly separate articles on the same page.</p>
+            </article>
+
+
+        </div>
+
+        <h3 class="steelblue">footer</h3>
+        <footer id="bottom">
+            <p>This is an example of the new semantic element, footer.</p>
+        </footer>
+
+</body>
+
+</html>
