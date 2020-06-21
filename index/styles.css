@@ -1,0 +1,89 @@
+:root{
+    --dark-primary-color: #E64A19;
+    --light-primary-color: #FFCCBC;
+    --primary-color: #FF5722;
+    --text-icons: #FFFFFF;
+    --accent-color: #00BCD4;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --divider-color: #BDBDBD;
+    --heading-font: 'Josefin Sans', sans-serif;
+    --text-font: font-family: 'Spartan', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    overflow: auto
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-family: var(--text-font);
+}
+.container{
+    width: 85%;
+    max-width: 2500px;
+    margin: 10px auto;
+    background: var(--light-primary-color);
+    border-color: var(--accent-color);
+    border-style: dotted;
+}
+ul{
+    list-style-type: none;
+}
+h1, h2, h3{
+    font-family: var(--heading-font);
+    color: var(--dark-primary-color);
+}
+h2{
+    text-align: center;
+}
+p{
+    padding: 5px;
+    color: var(--primary-text);
+    font-family: var(--text-font);
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-primary-color);
+}
+main{
+    margin: 20px 10px;
+}
+header, footer{
+    clear: both;
+    text-align: center;
+    width: 85%;
+    margin: 10px auto;
+    padding: 10px;
+    
+}
+
+#footeracc{
+    opacity: .5;
+}
+
+header{
+    background:var(--dark-primary-color);
+    color: var(--text-icons)
+}
+header h1{
+    color: var(--text-icons);
+    font-size: 3em;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+ul {
+    padding-inline-start: 10px;
+}
+
+ul li{
+    margin-top:20px;
+}
