@@ -1,0 +1,195 @@
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Merriweather Sans', sans-serif; */
+
+:root{
+    --dark-primary-color:  #c0b3c2 ;
+    --light-primary-color: #ffffff;
+    --primary-color: #f3e5f5;
+    --secondary-color: #1a237e;
+    --dark-secondary-color: #000051;
+    --text-icons: #FFFFFF;
+    --accent-color: #000051;
+    --primary-text: #000000;
+    --secondary-text: #FFFFFF;
+    --divider-color: #BDBDBD;
+    --heading-font: 'Bebas Neue', cursive;
+    --text-font: 'Dosis', sans-serif;
+}
+
+h2{
+    font-family: 'Merriweather Sans', sans-serif
+}
+body{
+    font-family: var(--text-font);
+    background: var(--primary-color);
+    color: var(--primary-color);
+    box-sizing: border-box;
+    
+}
+
+#hollyhock{
+    float: right;
+    width: 30%;
+    object-fit: cover;
+}
+
+.responsive {
+  width: 85%;
+  height: auto;
+}
+
+.headercontainer {
+    background: var(--secondary-color);
+    background-image: url(hollyhock.png);
+    background-position: center;
+    background-size: 20%;
+    text-align: left;
+    width: 90%;
+    max-width: 1500px;
+    margin: 10px auto;
+}
+
+.container{
+    background: var(--secondary-color);
+    width: 90%;
+    max-width: 1500px;
+    margin: 10px auto;
+}
+
+.containertext{
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+}
+h1{
+    font-family: var(--heading-font);
+    color: #FFFFFF;
+}
+
+h2{
+    font-family: 'Fjalla One', sans-serif;
+    color: #FFFFFF;
+    
+}
+
+nav a, .button{
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: #FFFFFF;
+    background: var(--secondary-light-color);
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+nav a:hover, .button:hover{
+    color: var(--primary-text);
+    background-color: var(--dark-primary-color);
+    
+}
+
+nav a:visited, .button:visited{
+    background: var(--primary-color);
+    border: #FFFFFF;
+}
+img{
+    padding: 15px;
+
+    
+}
+#floating{
+    width: 50%;
+    float: right;
+}
+
+#floatart{
+    width: 30%;
+    float: right;
+}
+
+#kelly{
+    width: 50%;
+    float: right;
+    padding: 20px;
+    border: solid;
+}
+
+#arttext{
+    padding: 20px;
+    width: 300px;
+    
+}
+
+#abouttext{
+    font-size: 2.0em;
+    padding: 30px;
+    
+}
+#video{
+    padding: 20px;
+    width: 500px;    
+    display: block; 
+    margin: auto;
+}
+
+#indextext{
+    border-width: 2px;
+    border-style: solid;    
+    border-color: var(--light-primary-color);
+    
+}
+#section{
+    padding: 20px;
+
+}
+
+nav{
+    text-align: center;
+    line-height: 4;
+}
+
+aside{
+    clear: both;
+    float: right;
+    margin: 0;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+header, footer{
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+  width: 30%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 30%;
+}
+
+footer{
+    font-family: 'Amatic SC', cursive;
+}
+
+main{
+    box-sizing: border-box;
+    padding: 30px;
+}
