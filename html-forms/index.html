@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>HTML Forms</h1>
+
+        <form>
+            <h2>Leave a Review</h2>
+            <br>
+            <h3>Your Name</h3>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required autofocus><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+
+        </form>
+
+        <form>
+            <h3>In-Store or Online</h3>
+            <input type="radio" id="in-store" name="type" value="in-store" required>
+            <label for="male">In-Store</label><br>
+            <input type="radio" id="online" name="type" value="online" required>
+            <label for="female">Online</label><br>
+        </form>
+
+
+        <form action="/action_page.php">
+            <h3>Membership Level</h3>
+            <label for="membership">Select:</label>
+            <select id="membership" name="membership">
+                <option value="platinum">Platinum</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="bronze">Bronze</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        <form>
+            <h3>Rate Your Overall Experience</h3>
+            <input type="checkbox" id="5" name="5" value="5">
+            <label for="5">5</label><br>
+            <input type="checkbox" id="4" name="4" value="4">
+            <label for="5">4</label><br>
+            <input type="checkbox" id="3" name="3" value="3">
+            <label for="3">3</label><br>
+            <input type="checkbox" id="2" name="2" value="2">
+            <label for="2">2</label><br>
+            <input type="checkbox" id="1" name="1" value="1">
+            <label for="2">1</label><br>
+        </form>
+
+        <h3>Write Your Review</h3>
+        <textarea name="review" rows="5" cols="60" placeholder="Please enter your review here.." id="review">
+
+                    </textarea>
+        <br>
+        <input type="submit" value="submit">
+    </div>
+</body>
+
+</html>
