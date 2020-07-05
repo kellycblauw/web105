@@ -1,0 +1,216 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 10px;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.5;
+    font-size: 1.2em;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,111,0.15730042016806722) 35%, rgba(0,95,255,0.29175420168067223) 100%);
+    }
+
+header{
+	clear: both;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+	margin: 10px;
+	margin-left: 20px;
+}
+
+.container{
+	width: 90%;    
+	max-width: 1200px;
+    margin: 20px auto;
+	overflow: auto;
+	border-color: darkmagenta;
+	border-style: solid;
+    overflow: hidden;
+    text-align: center;
+}
+
+footer, main, aside, article, div{
+    clear: both;
+}
+
+footer{
+	text-align:center;
+	padding: 20px;
+	color: darkmagenta;
+	opacity: .5;
+}
+.left{
+    clear: both; 
+    float: left;
+    padding: 20px;
+}
+.right{
+    clear:both;
+    float: right;
+    padding: 20px;
+}
+
+.center{
+    clear: both;
+    display: block;
+    margin: 10px auto;
+}
+
+img{
+    box-sizing: border-box;
+    margin: 10px;
+    display: block;
+}
+
+.horizontal-menu{
+    display: inline;
+    margin-left: 20px;
+   
+}
+
+.horizontal-menu a{
+	text-decoration:none;
+}
+
+
+.links{
+    position: static;
+    top: 0;
+    left:0;
+    width: 100%;
+    text-align: center;
+	margin: 15px 0;
+	
+}
+
+nav a, .button{
+	border: 5px solid darkmagenta;
+	padding: 10px 20px;
+    margin-left: 20px;
+    color: rebeccapurple;
+    text-decoration: none;
+	border-radius: 15px;
+	display: inline-block;
+	
+}
+
+nav a:hover, .button:hover{
+    color: lavender;
+    background-color: rebeccapurple;
+    }
+
+h1, h2{
+	color: darkmagenta;
+	text-align: center;
+	margin: 20px;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+.button2{
+    color: white;
+    padding: 10px 20px;
+    background:darkmagenta;
+    text-decoration: none;
+	border-radius: 20px;
+	position: fixed;
+}
+
+.button2:hover{
+    color: darkmagenta;
+	background: lavenderblush;
+	border: solid darkmagenta;
+}
+
+p{
+	padding: 10px;
+}
+
+aside{
+	margin: 20px auto;
+	padding: 20px;
+}
+
+#rcorners {
+  border-radius: 25px;
+  border: 2px solid darkmagenta;
+  background-color: white;
+}
+
+#mainbg {
+  background-image: url(blackrabbit.png), url(milkyway.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  padding: 30px;
+  color: white;
+  background-size: cover contain;
+}
+
+#colors {
+   background-color: hsl(120, 100%, 75%);
+}
+
+#cssshadows {
+    text-shadow: 2px 2px;
+}
+
+#columns {
+    -moz-column-count: 3;
+    -moz-column-gap: 5pxpx;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 5pxpx;
+    column-count: 3;
+    column-gap: 5pxpx;
+}
+
