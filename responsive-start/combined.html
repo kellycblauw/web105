@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        body {
+            background: ivory;
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: 3px solid rebeccapurple;
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+            body {
+                background: #CCCCCC;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+            body {
+                background: #888888;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <h1>Combined Layout</h1>
+            <nav>
+                <div class="col-2 col-m-4"><a href="index.html">Media</a> </div>
+                <div class="col-2 col-m-4"><a href="phone.html">Phone</a> </div>
+                <div class="col-3 col-m-4"><a href="tablet.html">Tablet</a></div>
+                <div class="col-3 col-m-6"><a href="computer.html">Computer</a></div>
+                <div class="col-2 col-m-6"><a href="combined.html">Combined </a></div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-5 col-m-6"> <img src="http://placezombie.com/300x200" alt="zombie"> </div>
+                <div class="col-7 col-m-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non velit esse earum ratione mollitia
+                        nobis tenetur, incidunt deserunt delectus totam iure error officiis sunt, molestias asperiores
+                        possimus sed laboriosam repudiandae.</p>
+                    <p>Labore excepturi ratione ullam provident quisquam assumenda nesciunt cumque vero officia, modi,
+                        iusto quis temporibus similique error eius enim fugiat? Rerum eius libero in ullam deleniti
+                        delectus, qui voluptatem sint.</p>
+                    <p>Eveniet consectetur, eius quos facere, alias porro qui expedita magni esse aspernatur excepturi
+                        incidunt? Veniam sapiente eveniet, quisquam saepe reprehenderit facere porro ullam. Sapiente est
+                        quos eius aliquid quia, harum.</p>
+                    <p>Repudiandae non voluptatibus tenetur illum libero veritatis minima labore quisquam nobis modi,
+                        quis esse illo velit? Ipsam, accusantium tempore aliquid, dicta, optio dolore architecto vel
+                        perferendis sint, deleniti nam iste?</p>
+                    <p>At, similique. Mollitia illum nostrum accusamus, vel vero ea voluptas sapiente aspernatur error
+                        dicta illo nihil tenetur dolorum totam exercitationem expedita harum quia quaerat aut iusto eum
+                        ipsa fugiat! Nostrum?</p>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-6 col-m-7">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aperiam aliquam itaque libero
+                        voluptates. Ex asperiores, placeat, minus ipsam rem sapiente! Veritatis eos earum est corrupti
+                        odio sapiente enim laudantium.</p>
+                    <p>Repellat sed tempora cupiditate quidem voluptas non reiciendis, a earum molestias officia? Vitae
+                        est repudiandae doloremque sint accusamus consequuntur sapiente, beatae itaque cum, saepe
+                        provident nemo tempora ab, ullam, odit.</p>
+                    <p>Vitae asperiores dignissimos, fugiat sequi praesentium earum culpa amet, nostrum ducimus quisquam
+                        nemo animi. Iusto nam sit earum explicabo. Officiis at, deleniti error aliquam itaque porro,
+                        tempore tenetur dolorem nihil.</p>
+                    <p>Dignissimos dolores ducimus minima, ex incidunt tenetur blanditiis itaque odio quaerat sunt totam
+                        beatae, sint accusamus dolorum distinctio delectus aspernatur omnis fugit quam ipsam nisi.
+                        Distinctio commodi quam qui dolor.</p>
+                    <p>Voluptatum nobis magnam nemo incidunt aspernatur sequi nostrum odit quos ex voluptatem facilis,
+                        esse beatae commodi aut aliquid dolorem explicabo voluptates reiciendis itaque ullam dolorum
+                        repellat natus consequuntur. Alias, recusandae.</p>
+                </div>
+                <div class="col-6 col-m-5"><img src="http://placezombie.com/200x300" alt="zombie"></div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-9 col-m-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nihil eum esse ut praesentium,
+                        autem. Aspernatur ullam odit, officia cum labore itaque quia quidem deleniti? Alias quos
+                        facilis, autem sunt!</p>
+                    <p>Velit incidunt distinctio cumque laboriosam voluptas veritatis alias, nostrum possimus delectus
+                        at adipisci saepe consectetur repellendus maxime laudantium soluta aperiam ad quibusdam esse.
+                        Praesentium unde natus quod et illum perspiciatis.</p>
+                    <p>Laborum porro illum amet magnam molestiae maxime dolor, pariatur soluta dolore odit praesentium
+                        impedit sapiente nesciunt alias, voluptates eveniet iste autem, obcaecati voluptate fugiat
+                        deleniti debitis et. Laudantium, ex, molestias.</p>
+                    <p>Error id ullam corporis obcaecati voluptas quam vero quis repudiandae iste aliquid eum unde
+                        adipisci nulla consequatur voluptatum, quidem commodi enim, nesciunt corrupti ab dolorum ex
+                        molestias possimus. Suscipit, similique.</p>
+                    <p>Incidunt modi voluptatem, quod numquam quia blanditiis dolores voluptates ipsum nesciunt
+                        consequuntur aperiam, repellendus a neque fugiat omnis ducimus laboriosam eos cupiditate
+                        praesentium ex totam perspiciatis error! Qui, dicta, quidem!</p>
+                </div>
+                <div class="col-3 col-m-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis et sed natus vel a eos
+                        obcaecati, aspernatur molestiae harum excepturi sint dolor, tempora culpa, sunt dolorem nam,
+                        reiciendis dolorum ipsa!</p>
+                    <p>Mollitia enim rem, officiis vitae maxime. Dignissimos a vero hic numquam expedita dolores,
+                        quisquam veritatis suscipit maiores consectetur reprehenderit, repellat soluta rerum, fugiat
+                        placeat voluptas iste. Sapiente ullam atque sit?</p>
+                    <p>A, fuga, repudiandae! Accusamus pariatur vero et dolorem expedita nostrum voluptate error placeat
+                        quos! Dolor tempore pariatur deserunt laborum delectus eveniet, praesentium sunt. Quia pariatur
+                        deleniti beatae aliquid porro asperiores.</p>
+                    <p>Nihil excepturi libero sequi inventore culpa, numquam fuga id hic explicabo in iure quo incidunt,
+                        error vero, nesciunt adipisci? Expedita, voluptas magnam sapiente accusamus dolorem vero, eum
+                        laborum unde quidem.</p>
+                    <p>Rerum deserunt numquam consectetur veniam, praesentium nam, voluptas consequatur itaque tempore
+                        adipisci aperiam! Labore iure beatae aperiam, sint libero consequatur, facilis magnam quaerat,
+                        assumenda molestiae distinctio id laborum vel error.</p>
+                </div>
+            </div>
+            <!-- end row-->
+            <div class="row">
+                <div class="col-3 col-m-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati mollitia maiores similique,
+                        modi itaque tempora, vitae dicta ullam, natus repellat minus. Ad nostrum voluptatum architecto
+                        officiis distinctio eum unde perferendis.</p>
+                    <p>Quam ex voluptates, dignissimos aliquam praesentium! Deserunt in molestias quod eius hic, non
+                        eveniet est inventore eos nesciunt impedit, error pariatur quas doloribus. Aspernatur, inventore
+                        harum illum ipsum, quis soluta.</p>
+                    <p>Ut, distinctio. Molestias voluptates, optio ut, unde itaque tempora officiis consequuntur facilis
+                        incidunt culpa dolores consectetur. Accusamus quo, minima, cumque debitis culpa similique
+                        perferendis ullam eveniet fuga maxime nulla illum.</p>
+                    <p>Suscipit dicta saepe error in voluptate ea sint iusto accusamus culpa iste adipisci eligendi illo
+                        dolore velit deserunt illum nisi id, blanditiis atque rem voluptas beatae quas ex. Sit, dolor.
+                    </p>
+                    <p>Perferendis doloribus ut cupiditate, corporis qui maxime consectetur delectus iste animi
+                        praesentium, magnam recusandae dolore blanditiis iure molestiae eligendi placeat nostrum dolor
+                        officia nisi nam natus repudiandae non? Doloremque, quas.</p>
+                </div>
+                <div class="col-3 col-m-4"> <img src="http://placezombie.com/400x300" alt="zombie"> </div>
+                <div class="col-6 col-m-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consectetur, iure dicta
+                        sint autem nam hic deleniti assumenda asperiores iusto. Assumenda error, officia modi voluptas
+                        impedit est cupiditate hic quam.</p>
+                    <p>Adipisci autem inventore voluptate ipsam accusantium voluptates possimus voluptatum. Voluptatibus
+                        reprehenderit, ipsa minima veniam consequuntur fuga laborum soluta dolor numquam, vel quia.
+                        Dolor maiores ut reprehenderit enim in, provident numquam.</p>
+                    <p>Distinctio accusantium ea animi maiores. Dolor asperiores consequatur repudiandae et a error
+                        quasi ad, eligendi, maxime eius. Rerum, consequuntur facere officia tenetur laborum! Iste
+                        repellendus, ullam architecto consequuntur. Labore, odit.</p>
+                    <p>Officiis laborum necessitatibus iste omnis cum ab veritatis doloribus ratione inventore. Ea sunt
+                        possimus officia accusantium esse dicta voluptas dolorem? Provident facilis modi fugit corporis!
+                        Neque rerum quisquam aliquid asperiores.</p>
+                    <p>Quos ex doloremque, reprehenderit molestiae totam quae eius eos accusamus sed, culpa dolorum
+                        repudiandae autem repellat. Modi ipsa fugiat aliquam quaerat, minus sit! Debitis quia, veniam
+                        atque voluptatem dolorum recusandae!</p>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-3 col-m-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ullam sunt debitis similique vitae
+                        vero delectus inventore error sed doloremque non eveniet libero omnis dignissimos voluptates,
+                        voluptatibus quod perspiciatis. Suscipit.</p>
+                    <p>Eum et, esse deserunt sit rerum, beatae vero ut veritatis fugiat optio dicta voluptas non ipsa,
+                        tempore, inventore reprehenderit libero fugit quidem quae deleniti. Delectus quaerat ullam nemo
+                        at tempora.</p>
+                    <p>Itaque totam sit dolores saepe laborum possimus pariatur ullam, doloremque velit id delectus
+                        natus perspiciatis est omnis, dolor recusandae eius cumque at voluptatibus fuga rem. Eaque
+                        repellendus magnam, architecto consectetur.</p>
+                    <p>Provident, accusamus, laudantium libero dolores voluptas omnis sit, ipsa, eligendi consequuntur
+                        distinctio commodi minima? Eaque odio perferendis assumenda quisquam. Ipsam aliquid, laboriosam
+                        accusamus eum veniam amet dicta veritatis aut animi!</p>
+                    <p>Totam dolorem laboriosam veritatis quidem molestiae nobis corrupti asperiores sequi error beatae
+                        perspiciatis culpa animi tenetur reprehenderit porro ratione reiciendis exercitationem
+                        voluptatibus eos, excepturi expedita iste nesciunt fuga nihil, vitae.</p>
+                </div>
+                <div class="col-6 col-m-4"><img src="http://placezombie.com/250x250" alt="zombie"></div>
+                <div class="col-3 col-m-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus magnam repellat accusamus.
+                        Laborum optio facere, consequatur dolor quas officiis ab dolorem maiores iste, ipsa nam atque
+                        accusantium unde repudiandae explicabo.</p>
+                    <p>Laudantium distinctio in excepturi ipsa officia doloremque perferendis nulla dolorum magni
+                        ducimus, voluptatibus debitis accusamus suscipit ad veritatis, sequi velit dicta, odio quia.
+                        Eligendi praesentium, aliquid maxime reiciendis, velit iure?</p>
+                    <p>Ipsum modi cupiditate nesciunt saepe, consequuntur quisquam assumenda et voluptas soluta, dolores
+                        repellendus. Porro, in, blanditiis. Explicabo et sapiente, ad numquam maiores? Excepturi
+                        voluptates, inventore eos, ea recusandae fugiat ipsam!</p>
+                    <p>Numquam quod ab nobis sed tenetur, eum nostrum placeat? Numquam, autem, distinctio. Laborum at,
+                        quod. Tenetur repellat alias, labore corporis, aliquid, molestiae accusantium maxime adipisci
+                        consectetur quae aliquam facilis hic!</p>
+                    <p>Voluptas quasi eveniet quam repudiandae veritatis sed repellendus, illo sapiente velit quo iure
+                        sunt sequi nemo alias molestiae similique eius! Repudiandae deleniti distinctio ipsa iste
+                        suscipit unde perspiciatis iusto ea.</p>
+                </div>
+            </div>
+            <!-- end row-->
+        </main>
+        <footer class="row">
+            <div>
+                <h3> &copy; Meri Engel 2017 </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
