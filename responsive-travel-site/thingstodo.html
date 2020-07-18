@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things-to-Do</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .row {
+            border: 3px solid;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: 3px solid darkslateblue;
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+            background: lightseagreen;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+            body {
+                background: #0097A7;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+            body {
+                background: darkcyan;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+
+        <header class="row">
+            <h1>Things to Do</h1>
+            <nav>
+                <div class="col-4 col-m-4"><a href="index.html">Home</a></div>
+                <div class="col-4 col-m-4"><a href="Photos.html">Photos</a></div>
+                <div class="col-4 col-m-4"><a href="thingstodo.html">Things to Do</a></div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-6 col-m-6">
+                    <a href="https://www.newzealand.com/ie/feature/the-lord-of-the-rings-trilogy-filming-locations/"
+                        target="_blank">
+                        <img src="https://www.newzealand.com/assets/Tourism-NZ/Hamilton-Waikato/d02afa9a52/img-1536987490-3136-733-p-41EC64B4-F71A-AB28-01C7C48D4E7E52B6-2544003__aWxvdmVrZWxseQo_CropResizeWzE0NDAsbnVsbCw3NSwianBnIl0.jpg"
+                            alt="lord of the rings set" id="floatimg" class="responsive"></a>
+                </div>
+                <div class="col-6 col-m-6">
+                    <h2>The Lord of the Rings</h2>
+                    <p>The Lord of the Rings Trilogy was filmed entirely in New Zealand.</p>
+                    <p>Fans of The Lord of the Rings can visit several locations in Wellington such as, the Shire,
+                        Gardens
+                        of
+                        Isengard,
+                        Rivendell, Osgiliath Wood, and the Paths of the Dead.
+                    </p>
+                    <p>Fans can visit the real Village of Hobbiton in the Shire, as it remains as a permanent
+                        attraction.
+                        Other
+                        locations can also be found throughout New Zealand, but not all are as accessible as
+                        Hobbiton.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <div class="row">
+            <div class="col-6 col-m-6">
+                <a href="https://www.newzealand.com/ie/feature/powhiri-maori-welcome/" target="_blank">
+                    <img src="https://www.newzealand.com/assets/Tourism-NZ/Northland-Bay-of-Islands/cc86a577fe/img-1536162033-1511-344-987990D3-D1A2-2DB3-AA1AA557501FDF4F-v2__aWxvdmVrZWxseQo_CropResizeWzY1MCw0ODgsODAsImpwZyJd.jpg"
+                        alt="pōwhiri" id="floatimg" class="responsive"></a></div>
+
+            <div class="col-6 col-m-6">
+                <h2>Māori Culture</h2>
+                <p>Tourists can see Māori culture close up and even participate in special ceremonies to
+                    experience
+                    their
+                    traditions
+                    for themselves.</p>
+                <p> You can also visit the marae, the Māori neeting grounds. According to <a
+                        href="https://www.newzealand.com/ie/geothermal/">100%
+                        Pure New Zealand</a>, "A visitor who has never set foot on a marae is known as waewae
+                    tapu
+                    or
+                    sacred
+                    feet. They must partake in a formal
+                    welcoming ceremony, called a pōwhiri, to remove the tapu (sacredness) and become one people
+                    with
+                    those
+                    of
+                    the marae." Even if you choose not to participate in these traditions, you will likely come
+                    across a
+                    marae as you make your way through New Zealand. </p>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="container">
+
+
+
+            <div class="col-4 col-m-3">
+                <h2>Volcanic & Geothermal Nature</h2>
+                <p>In the Rotorua areas, tourists can watch boiling mud pools and geysers with heat beneath their
+                    feet
+                    from the ground filled with steam. According to <a
+                        href="https://www.newzealand.com/ie/geothermal/">100%
+                        Pure New Zealand</a>, "Minutes from the city centre, geysers of boiling water roar from the
+                    ground
+                    and pools of bubbling mud gurgle and belch." There are plenty of walkways that offer easy acces
+                    and
+                    views of this interesting bit of nature.
+                </p>
+            </div>
+
+            <div class="col-4 col-m-3">
+                <h2>Whale Watching</h2>
+                <p>Tourists can visit Auckland and watch whales in their natural environment in the Hauraki Gulf
+                    Marine
+                    Park.
+                    Whales aren't the only wildlife visitors can expect to see here as "over 25 of the 37 southern
+                    hemisphere
+                    marine mammals have been identified in the area, which makes up almost a third of
+                    the world’s population of these species", according to <a
+                        href="https://www.newzealand.com/ie/geothermal/">100%
+                        Pure New Zealand</a>.
+                </p>
+            </div>
+
+            <div class="col-4 col-m-6">
+                <p>Kaikoura is one of the one places in the world where you can see sperm whales. According to <a
+                        href="https://www.newzealand.com/ie/geothermal/">100%
+                        Pure New Zealand</a>, "Whales thrive
+                    close to Kaikoura because of its unusual submarine landscape. The continental shelf drops
+                    quickly
+                    into a
+                    number of extremely deep underwater canyons. In addition, a warm current from the north meets a
+                    colder
+                    one from the
+                    south. This causes nutrients from deep within the ocean to be carried upward, a phenomenon that
+                    helps to
+                    support all
+                    types of marine life from plankton and krill to dolphins and whales."</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <a href="https://mymodernmet.com/florian-wenzel-new-zealand-travel-photography/" target="_blank">
+                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/03/florian-wenzel-new-zealand-travel-photography-9.jpg"
+                        alt="Mt. Aspiring National Park" class="responsive"></a>
+                <figcaption>Mt. Aspiring National Park</figcaption>
+
+            </div>
+
+
+
+            <footer id=footer>
+                <p>&copy; Kelly Blauw 2020</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

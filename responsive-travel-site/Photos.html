@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .row {
+            border: 3px solid;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: 3px solid darkslateblue;
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+            background: lightseagreen;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+            body {
+                background: #0097A7;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+            body {
+                background: darkcyan;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Photos</h1>
+            <nav>
+                <div class="col-4 col-m-4"><a href="index.html">Home</a></div>
+                <div class="col-4 col-m-4"><a href="Photos.html">Photos</a></div>
+                <div class="col-4 col-m-4"><a href="thingstodo.html">Things to Do</a></div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section>
+            <h2>Breathtaking Scenery & Nature</h2>
+            <p>New Zealand's natural landscape offers plenty enough reason to make the trip and experience
+                it in person. There are endless opportunities to experience one of a kind beauty up close and
+                personal.
+            </p>
+        </section>
+        <div class="row">
+            <div class="col-4 col-m-4">
+                <a href="https://www.adventure-journal.com/2014/08/the-aj-list-the-13-best-things-about-new-zealand/"
+                    target="_blank">
+                    <img src="https://www.adventure-journal.com/wp-content/uploads/2014/07/adventure-journal-aj-list-new-zealand-01.jpg"
+                        alt="New Zealand Mountains" class="responsive"></a>
+                <a href="https://www.switchbacktravel.com/new-zealand/best-adventure-towns" target="_blank">
+                    <img src="https://www.switchbacktravel.com/sites/default/files/images/articles/Queenstown%2C%20New%20Zealand.jpg"
+                        alt="New Zealand City" class="responsive"></a>
+                <a href="https://activeadventures.com/inspiration/blog/top-10-views-new-zealand/" target="_blank">
+                    <img src="https://activeadventures.com/assets/images/blog/2018/Top-10-Views-New-Zealand/whakarewarewa-geyser.jpg"
+                        alt="Whakarewarewa Geyser" class="responsive"></a>
+            </div>
+            <div class="col-4 col-m-4">
+                <a href="https://activeadventures.com/inspiration/blog/top-10-views-new-zealand/" target="_blank">
+                    <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Oceania/New%20Zealand/milford-sound-new-zealand.jpg?imwidth=1400"
+                        alt="mountains" class="responsive"></a>
+                <a href="https://activeadventures.com/inspiration/blog/top-10-views-new-zealand/" target="_blank">
+                    <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Oceania/New%20Zealand/milford-track-waterfall-new-zealand.jpg?imwidth=1240"
+                        alt="Forest" class="responsive"></a>
+                <a href="https://activeadventures.com/inspiration/blog/top-10-views-new-zealand/" target="_blank">
+                    <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Oceania/New%20Zealand/stewart-island-new-zealand-.jpg?imwidth=1240"
+                        alt="Mountains" class="responsive"></a>
+            </div>
+            <div class="col-4 col-m-4">
+                <a href="https://www.newzealand.com/us/" target="_blank">
+                    <img src="https://www.newzealand.com/assets/Tourism-NZ/Fiordland/img-1536137761-110-7749-p-7ECF7092-95BD-FE18-6D4107E2E42D067E-2544003__aWxvdmVrZWxseQo_FocalPointCropWzQyNyw2NDAsNTAsNTAsODUsImpwZyIsNjUsMi41XQ.jpg"
+                        alt="Snow" class="responsive"></a>
+                <a href="https://www.worldtravelguide.net/guides/oceania/new-zealand/" target="_blank">
+                    <img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/shu-NewZealand-155246192-Olga-Danylenko-copy.jpg"
+                        alt="new zealand" class="responsive"></a>
+                <a href="https://www.cnn.com/travel/destinations/new-zealand" target="_blank">
+                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/170606121305-new-zealand---travel-destination---shutterstock-180140354.jpg"
+                        alt="Mountains" class="responsive"></a>
+            </div>
+            <footer id=footer>
+                <p>&copy; Kelly Blauw 2020</p>
+            </footer>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .row {
+            border: 3px solid;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: 3px solid darkslateblue;
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+            background: lightseagreen;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+            body {
+                background: #0097A7;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+            body {
+                background: darkcyan;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header class="row">
+            <h1>Visiting New Zealand</h1>
+            <nav>
+                <div class="col-4 col-m-4"><a href="index.html">Home</a></div>
+                <div class="col-4 col-m-4"><a href="Photos.html">Photos</a></div>
+                <div class="col-4 col-m-4"><a href="thingstodo.html">Things to Do</a></div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="row">
+
+            <div class="col-4 col-m-4">
+                <h2>Waitomo Glowworm Caves</h2>
+                <img src="https://images.rove.me/w_1920,q_85/qzfq4awhtabwee9nilrk/new-zealand-waitomo-glowworm-caves.jpg"
+                    alt="glowworm cave" class="responsive" id="glowwormcave"></a>
+                <figcaption>The ceilings of these caves are illuminated by thousands of glow worms.</figcaption>
+            </div>
+            <div class="col 4 col-m-4">
+                <p>
+                    Tourists can take a boat ride underground and see thousands of tiny glow worms illuminating the
+                    caves above them. Glow worms can be found all over Zew Zealand, but they are most often found
+                    in damp, overgrown places like the banks of lakes, rivers and forest undergrowth.
+                </p>
+
+                <h2>New Zealand</h2>
+                <p>New Zealand is a great choice for a relaxing, scenic vacation. You will be surrounded by
+                    breathtaking
+                    scenery, like mountains, geysers, glaciers, waterfalls and even rainforests.</p>
+                <p>There are many choices for adventure or extreme activities like, sky diving, bungy jumping,
+                    jet boating, rafting, caving, zip lining, canyoning, and heli-skiing. There are also endless
+                    opportunities to experience the breathtaking nature for free by hiking, swimming in the
+                    countless
+                    natural bodies of water, and even just hanging out under the stars.
+                </p>
+            </div>
+
+            <div class="col 4 col-m-4">
+                <img src="https://www.switchbacktravel.com/sites/default/files/images/articles/Mt.%20Cook%20Village%2C%20New%20Zealand.jpg"
+                    alt="new zealand mountain" id="floatimg" class="responsive">
+                <figcaption>Highway 80 to Mt. Cook Village | Flickr Credit: Almassengale</figcaption>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <a href="https://mymodernmet.com/florian-wenzel-new-zealand-travel-photography/" target="_blank">
+                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/03/florian-wenzel-new-zealand-travel-photography-7.jpg"
+                        alt="mt taranaki" class="responsive"></a>
+                <figcaption>Mt. Taranaki</figcaption>
+
+            </div>
+            <div class="col-6 col-m-4">
+                <a href="https://mymodernmet.com/florian-wenzel-new-zealand-travel-photography/" target="_blank">
+                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/03/florian-wenzel-new-zealand-travel-photography-8.jpg"
+                        alt="mt taranaki" class="responsive"></a>
+                <figcaption>Mt. Taranaki</figcaption>
+            </div>
+            <div class="col-6 col-m-8">
+                <a href="https://mymodernmet.com/florian-wenzel-new-zealand-travel-photography/" target="_blank">
+                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/03/florian-wenzel-new-zealand-travel-photography-11.jpg"
+                        alt="The road to Mt. Cook National Park" class="responsive"></a>
+                <figcaption>The road to Mt. Cook National Park</figcaption>
+            </div>
+        </div>
+    </main>
+
+
+    <footer id=footer>
+        <p>&copy; Kelly Blauw 2020</p>
+    </footer>
+
+
+</body>
+
+</html>
