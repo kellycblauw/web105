@@ -1,0 +1,139 @@
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: lightsteelblue;
+            color: midnightblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header,
+        .container,
+        footer {
+            max-width: 1000px;
+            margin: 10px auto;
+            border: 4px dotted midnightblue;
+            padding: 30px;
+            background-color: whitesmoke;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: rebeccapurple;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #my-row {
+            display: flex;
+            max-width: 1000px;
+            max-height: 1000px;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: space-around;
+        }
+
+        #my-column {
+            display: flex;
+            max-width: 800px;
+            max-height: 800px;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #my-row-reverse {
+            display: flex;
+            max-width: 1000px;
+            max-height: 1000px;
+            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #my-column-reverse {
+            display: flex;
+            max-width: 800px;
+            max-height: 800px;
+            flex-flow: column-reverse wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+        .my-title {
+            max-width: 1000px;
+            height: 30px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            flex: auto;
+            padding: 2px;
+        }
+    </style>
+
+<body>
+    <header>
+        <h2>Using Flexbox</h2>
+    </header>
+
+    <div class="my-title">
+        <h2>Row</h2>
+    </div>
+    <div class="container" id="my-row">
+        <img src="nessie3.jpg" alt="cute dogs"></a>
+        <img src="nosey.jpg" alt="cute dogs"></a>
+        <img src="ollie01.jpg" alt="cute dogs"></a>
+        <img src="ollielaugh.jpg" alt="cute dogs"></a>
+        <img src="olliepond.jpg" alt="cute dogs"></a>
+        <img src="pug.jpg" alt="cute dogs"></a>
+        <img src="puppy.jpg" alt="cute dogs"></a>
+    </div>
+
+    <div class="my-title">
+        <h2>Reverse Row</h2>
+    </div>
+    <div class="container" id="my-row-reverse">
+        <img src="nessie3.jpg" alt="cute dogs"></a>
+        <img src="nosey.jpg" alt="cute dogs"></a>
+        <img src="ollie01.jpg" alt="cute dogs"></a>
+        <img src="ollielaugh.jpg" alt="cute dogs"></a>
+        <img src="olliepond.jpg" alt="cute dogs"></a>
+        <img src="pug.jpg" alt="cute dogs"></a>
+        <img src="puppy.jpg" alt="cute dogs"></a>
+    </div>
+
+    <div class="my-title">
+        <h2>Column</h2>
+    </div>
+    <div class="container" id="my-column">
+        <img src="nessie3.jpg" alt="cute dogs"></a>
+        <img src="nosey.jpg" alt="cute dogs"></a>
+        <img src="ollie01.jpg" alt="cute dogs"></a>
+        <img src="ollielaugh.jpg" alt="cute dogs"></a>
+        <img src="olliepond.jpg" alt="cute dogs"></a>
+        <img src="pug.jpg" alt="cute dogs"></a>
+        <img src="puppy.jpg" alt="cute dogs"></a>
+    </div>
+
+    <div class="my-title">
+        <h2>Reverse Column</h2>
+    </div>
+    <div class="container" id="my-column-reverse">
+        <img src="nessie3.jpg" alt="cute dogs"></a>
+        <img src="nosey.jpg" alt="cute dogs"></a>
+        <img src="ollie01.jpg" alt="cute dogs"></a>
+        <img src="ollielaugh.jpg" alt="cute dogs"></a>
+        <img src="olliepond.jpg" alt="cute dogs"></a>
+        <img src="pug.jpg" alt="cute dogs"></a>
+        <img src="puppy.jpg" alt="cute dogs"></a>
+    </div>
+</body>
