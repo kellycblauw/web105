@@ -1,0 +1,89 @@
+/*font-family: 'Fjalla One', sans-serif;
+font-family: 'Archivo Narrow', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    padding: 5px;   
+}
+
+body{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: bold;
+    color: lightcyan;
+    padding: 20px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+h1, h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: darkred;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Fjalla One', sans-serif;
+    color: darkslateblue;
+    
+}
+
+nav {
+    text-align: center;
+}
+
+nav a, .button{
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: darkred;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+nav a:hover, .button:hover{
+    color: darkslateblue;
+    background-color: lightyellow;
+    
+}
+
+nav a:visited, .button:visited{
+    color: darkslategrey;
+}
+
+header, footer{
+    clear: both;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+footer{
+    font-family: 'Amatic SC', cursive;
+    color: darkmagenta;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.responsive {
+    width: 85%;
+    height: auto;
+    padding: 20px;
+}
+
+.responsive-large {
+    width: 40%;
+    padding: 20px;
+}
